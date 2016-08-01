@@ -17,6 +17,8 @@ module.exports = (robot) ->
       res.reply "I'm afraid I can't let you do that."
     else
       res.reply "Opening #{doorType} doors"
+  robot.hear /a/i, (res) ->
+    res.send "(eyes0looking0up0emoj)"
   #
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
